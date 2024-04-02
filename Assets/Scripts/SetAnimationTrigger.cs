@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class SetAnimationTrigger : MonoBehaviour
 {
-    [SerializeField] private Animator _animator;
+    [SerializeField] private Animator _triggerAnimator;
     void Start()
     {
-        _animator=FindAnyObjectByType<Animator>();
+        _triggerAnimator=FindAnyObjectByType<Animator>();
     }
 
     void Setter()
     {
-        _animator.SetTrigger("Money");
+        _triggerAnimator.SetTrigger("Money");
     }
 }

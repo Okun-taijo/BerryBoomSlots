@@ -5,25 +5,25 @@ using UnityEngine.EventSystems;
 
 public class DragNDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
-    [SerializeField]private MinigameGrid _grid;
-    [SerializeField]private RectTransform _rectTransform;
-    private CanvasGroup _canvasGroup;
-    private RectTransform _parentRectTransform;
+    [SerializeField]private MinigameGrid _minigameField;
+    [SerializeField]private RectTransform _localRectRansform;
+    private CanvasGroup _localCanvasGroup;
+    private RectTransform _parentObjectRectTransform;
     
     public void Awake()
     {
-        _grid = GetComponentInParent<MinigameGrid>();
-        _rectTransform=GetComponent<RectTransform>();
-        _canvasGroup=GetComponent<CanvasGroup>();
-        _parentRectTransform = GetComponentInParent<RectTransform>();
+        _minigameField = GetComponentInParent<MinigameGrid>();
+        _localRectRansform=GetComponent<RectTransform>();
+        _localCanvasGroup=GetComponent<CanvasGroup>();
+        _parentObjectRectTransform = GetComponentInParent<RectTransform>();
         
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
         
-            _canvasGroup.blocksRaycasts = false;
-            _canvasGroup.alpha = 0.7f;
-        _grid.RemoveOccupiedCell(transform.parent);
+            _localCanvasGroup.blocksRaycasts = false;
+            _localCanvasGroup.alpha = 0.7f;
+        _minigameField.FreeCell(transform.parent);
         
     }
 
@@ -31,16 +31,14 @@ public class DragNDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
     {
         if (IsInsidePanel(eventData))
         {
-            _rectTransform.anchoredPosition += eventData.delta/_parentRectTransform.localScale.x;
+            _localRectRansform.anchoredPosition += eventData.delta/_parentObjectRectTransform.localScale.x;
         }
     }
     public void OnEndDrag(PointerEventData eventData)
     {
         Debug.Log("End");
-        _canvasGroup.blocksRaycasts = true;
-        _canvasGroup.alpha = 1f;
-       
-        // throw new System.NotImplementedException();
+        _localCanvasGroup.blocksRaycasts = true;
+        _localCanvasGroup.alpha = 1f;
     }
     public void OnPointerDown(PointerEventData eventData)
     {
@@ -49,12 +47,12 @@ public class DragNDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
     private bool IsInsidePanel(PointerEventData eventData   )
     {
         Vector3[] corners = new Vector3[4];
-        _parentRectTransform.GetWorldCorners(corners);
+        _parentObjectRectTransform.GetWorldCorners(corners);
 
         Vector2 localMousePosition;
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(_parentRectTransform, eventData.position, null, out localMousePosition);
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(_parentObjectRectTransform, eventData.position, null, out localMousePosition);
 
-        return RectTransformUtility.RectangleContainsScreenPoint(_parentRectTransform, eventData.position);
+        return RectTransformUtility.RectangleContainsScreenPoint(_parentObjectRectTransform, eventData.position);
     }
 
 }

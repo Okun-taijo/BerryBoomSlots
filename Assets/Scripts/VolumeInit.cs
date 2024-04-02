@@ -5,13 +5,13 @@ using UnityEngine.Audio;
 
 public class VolumeInit : MonoBehaviour
 {
-    [SerializeField] private AudioMixer _audioMixer;
-    [SerializeField] private string _volumeParametr;
+    [SerializeField] private AudioMixer _globalAudioMixer;
+    [SerializeField] private string _parametr;
     // Start is called before the first frame update
     void Start()
     {
-        var volumeValue = PlayerPrefs.GetFloat(_volumeParametr, -80f);
-        _audioMixer.SetFloat(_volumeParametr, volumeValue);
+        var volumeValue = PlayerPrefs.GetFloat(_parametr, -80f);
+        _globalAudioMixer.SetFloat(_parametr, volumeValue);
     }
 
     // Update is called once per frame

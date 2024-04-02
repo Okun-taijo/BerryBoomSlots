@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class DontDestroy : MonoBehaviour
 {
-    public static DontDestroy Instance;
+    public static DontDestroy Indestructable;
 
     private void Start()
     {
-        if (Instance == null)
+        if (Indestructable == null)
         {
-            Instance = this;
+            Indestructable = this;
             DontDestroyOnLoad(gameObject);
         }
         else

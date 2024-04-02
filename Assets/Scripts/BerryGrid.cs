@@ -6,17 +6,17 @@ using UnityEngine.UI;
 
 public class BerryGrid : MonoBehaviour
 {
-    [SerializeField] private GameObject _strawberryPrefab;
-    [SerializeField] private Transform _gridParent;
-    [SerializeField] private float _minSpawnTime = 5f;
-    [SerializeField] private float _maxSpawnTime = 15f;
-    public List<Transform> availableCells = new List<Transform>();
-    private Transform activeStrawberry;
-    public List<Transform> usedCoinCells = new List<Transform>();
+    [SerializeField] private GameObject _berryPrefab;
+    [SerializeField] private Transform _playableGrid;
+    [SerializeField] private float _minimumSpawnTime = 5f;
+    [SerializeField] private float _maximumSpawnTime = 15f;
+    public List<Transform> EmptyCells = new List<Transform>();
+    private Transform _activeStrawberry;
+    public List<Transform> FilledCells = new List<Transform>();
 
     private void Start()
     {
-        FillAvailableCells();
+        FillEmptyCellsList();
         StartCoroutine(SpawnStrawberry());
         StartCoroutine(SpawnCoin());
     }
@@ -24,11 +24,11 @@ public class BerryGrid : MonoBehaviour
     {
         
     }
-    private void FillAvailableCells()
+    private void FillEmptyCellsList()
     {
-        foreach (Transform cell in _gridParent)
+        foreach (Transform cell in _playableGrid)
         {
-            availableCells.Add(cell);
+            EmptyCells.Add(cell);
         }
     }
 
@@ -37,15 +37,15 @@ public class BerryGrid : MonoBehaviour
         
         while (true)
         {
-            if (activeStrawberry == null)
+            if (_activeStrawberry == null)
             {
-                yield return new WaitForSeconds(Random.Range(_minSpawnTime, _maxSpawnTime));
-                if (usedCoinCells.Count < availableCells.Count)
+                yield return new WaitForSeconds(Random.Range(_minimumSpawnTime, _maximumSpawnTime));
+                if (FilledCells.Count < EmptyCells.Count)
                 {
-                    Transform randomCell = GetRandomAvailableCell();
-                    activeStrawberry = Instantiate(_strawberryPrefab, randomCell.position, Quaternion.identity, randomCell).transform;
+                    Transform randomCell = GetEmptyCell();
+                    _activeStrawberry = Instantiate(_berryPrefab, randomCell.position, Quaternion.identity, randomCell).transform;
                     // Сделаем клубнику дочерним объектом ячейки
-                    activeStrawberry.SetParent(randomCell);
+                    _activeStrawberry.SetParent(randomCell);
                 }
             }
             else
@@ -59,59 +59,59 @@ public class BerryGrid : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(Random.Range(_minSpawnTime, _maxSpawnTime));
+            yield return new WaitForSeconds(Random.Range(_minimumSpawnTime, _maximumSpawnTime));
 
-            if (availableCells.Count > 0)
+            if (EmptyCells.Count > 0)
             {
-                Transform randomCell = GetRandomAvailableCell();
-                usedCoinCells.Add(randomCell);
-                Transform coin = Instantiate(_strawberryPrefab, randomCell.position, Quaternion.identity, randomCell).transform;
+                Transform randomCell = GetEmptyCell();
+                FilledCells.Add(randomCell);
+                Transform coin = Instantiate(_berryPrefab, randomCell.position, Quaternion.identity, randomCell).transform;
                 // Сделаем монетку дочерним объектом ячейки
                 coin.transform.SetParent(randomCell);
             }
         }
     }
 
-    private Transform GetRandomAvailableCell()
+    private Transform GetEmptyCell()
     {
-        int randomIndex = Random.Range(0, availableCells.Count);
-        Transform randomCell = availableCells[randomIndex];
-        availableCells.RemoveAt(randomIndex);
+        int randomIndex = Random.Range(0, EmptyCells.Count);
+        Transform randomCell = EmptyCells[randomIndex];
+        EmptyCells.RemoveAt(randomIndex);
         return randomCell;
     }
 
     public void PlaceStrawberry(Transform strawberryTransform, Transform cellTransform)
     {
-        if (availableCells.Contains(cellTransform))
+        if (EmptyCells.Contains(cellTransform))
         {
             strawberryTransform.position = cellTransform.position;
-            availableCells.Remove(cellTransform);
+            EmptyCells.Remove(cellTransform);
         }
     }
 
-    public void RemoveOccupiedCell(Transform cell)
+    public void FreeCell(Transform cell)
     {
         //availableCells.Add(cell);
-        for (int i = 0; i <usedCoinCells.Count; i++)
+        for (int i = 0; i <FilledCells.Count; i++)
         {
-            if (usedCoinCells[i].childCount==0) 
+            if (FilledCells[i].childCount==0) 
             {
-                availableCells.Add(usedCoinCells[i]);
-                usedCoinCells.RemoveAt(i);
+                EmptyCells.Add(FilledCells[i]);
+                FilledCells.RemoveAt(i);
             }
         }
     }
-    public void AddOccupiedCell(Transform cell)
+    public void FillCell(Transform cell)
     {
-        availableCells.Remove(cell);
+        EmptyCells.Remove(cell);
     }
 
     public void SpawnSingleBerry(GameObject gameObject)
     {
-        if (availableCells.Count > 0)
+        if (EmptyCells.Count > 0)
         {
-            Transform randomCell = GetRandomAvailableCell();
-            usedCoinCells.Add(randomCell);
+            Transform randomCell = GetEmptyCell();
+            FilledCells.Add(randomCell);
             Transform coin = Instantiate(gameObject, randomCell.position, Quaternion.identity, randomCell).transform;
             // Сделаем монетку дочерним объектом ячейки
             coin.transform.SetParent(randomCell);

@@ -7,9 +7,9 @@ using UnityEngine.UI;
 
 public class OnDrop : MonoBehaviour, IDropHandler
 {
-    [SerializeField] private float dropRadius = 160f;
-    [SerializeField] private MinigameGrid _grid;
-    private Animator _animator;
+    [SerializeField] private float _dropRadius = 160f;
+    [SerializeField] private MinigameGrid _minigameGrid;
+    private Animator _sceneAnimator;
     private BerryGrowing _berryGrowing;
     private string _currentSceneName;
     private BerryGrid _berryGrid;
@@ -17,7 +17,7 @@ public class OnDrop : MonoBehaviour, IDropHandler
     {
         
         _currentSceneName = SceneManager.GetActiveScene().name;
-        dropRadius = 200f;
+        _dropRadius = 200f;
         _berryGrid = GetComponentInParent<BerryGrid>();
     }
 
@@ -31,18 +31,18 @@ public class OnDrop : MonoBehaviour, IDropHandler
         _berryGrowing = draggedTransform.GetComponent<BerryGrowing>();
         
 
-        if (Vector2.Distance(draggedPosition, dropCenter) <= dropRadius)
+        if (Vector2.Distance(draggedPosition, dropCenter) <= _dropRadius)
         {
             if (_currentSceneName == "MinigameScene")
             {
                 if (dropTransform.childCount == 0)
                 {
-                    _grid.AddOccupiedCell(dropTransform);
+                    _minigameGrid.FillCell(dropTransform);
                 }
                 else
                 {
                     GameObject.Destroy(dropTransform.GetChild(0).gameObject);
-                    _grid.AddOccupiedCell(dropTransform);
+                    _minigameGrid.FillCell(dropTransform);
                     _berryGrowing.OnCoinTaken();
                 }
                 draggedTransform.SetParent(dropTransform);
@@ -50,10 +50,10 @@ public class OnDrop : MonoBehaviour, IDropHandler
             }
             if (_currentSceneName == "StrawberryGame")
             {
-                _animator = draggedTransform.GetComponentInChildren<Animator>();
+                _sceneAnimator = draggedTransform.GetComponentInChildren<Animator>();
                 if (dropTransform.childCount == 0)
                 {
-                    _berryGrid.AddOccupiedCell(dropTransform);
+                    _berryGrid.FillCell(dropTransform);
                     draggedTransform.SetParent(dropTransform);
                     draggedTransform.anchoredPosition = Vector2.zero;
                 }
@@ -62,10 +62,10 @@ public class OnDrop : MonoBehaviour, IDropHandler
                     if(draggedTransform.gameObject.name==dropTransform.GetChild(0).gameObject.name)
                     {
                         GameObject prefab = _berryObject._nextBerry;
-                        _animator.SetTrigger("Pop");
+                        _sceneAnimator.SetTrigger("Pop");
                         Destroy(draggedTransform.gameObject, 0.5f);
                         Destroy(dropTransform.GetChild(0).gameObject, 0.5f);
-                        _berryGrid.RemoveOccupiedCell(dropTransform);
+                        _berryGrid.FreeCell(dropTransform);
                         _berryGrid.SpawnSingleBerry(prefab);
                        
                     }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class GainCoins : MonoBehaviour
 {
     [SerializeField] private ResourcesManager _resourcesManager;
-    [SerializeField] private Animator _animator;
+    [SerializeField] private Animator _winAnimator;
     [SerializeField] private Animator _sceneAnimator;
     [SerializeField] private AudioSource _audioSource;
 
@@ -16,10 +16,10 @@ public class GainCoins : MonoBehaviour
     }
     public void OnClick()
     {
-        _resourcesManager._coins += 50;
+        _resourcesManager.Coins += 50;
         _resourcesManager.SavePlayerPrefs();
         _resourcesManager.ChangeCoinCounter();
-        _animator.SetTrigger("Pop");
+        _winAnimator.SetTrigger("Pop");
         _audioSource.Play();
         _sceneAnimator.SetTrigger("Money");
         Destroy(gameObject, 1.5f);

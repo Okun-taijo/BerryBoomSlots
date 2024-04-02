@@ -6,27 +6,27 @@ using UnityEngine.UI;
 
 public class MinigameGrid : MonoBehaviour
 {
-    [SerializeField] private GameObject _strawberryPrefab;
+    [SerializeField] private GameObject _berryPrefab;
     [SerializeField] private GameObject _coinPrefab;
-    [SerializeField] private Transform _gridParent;
-    [SerializeField] private float _minSpawnTime = 5f;
-    [SerializeField] private float _maxSpawnTime = 15f;
-    [SerializeField]private List<Transform> availableCells = new List<Transform>();
-    private Transform activeStrawberry;
-    [SerializeField]private List<Transform> usedCoinCells = new List<Transform>();
+    [SerializeField] private Transform _playableGrid;
+    [SerializeField] private float _minimumSpawnTime = 5f;
+    [SerializeField] private float _maximumSpawnTime = 15f;
+    [SerializeField]private List<Transform> EmptyCells = new List<Transform>();
+    private Transform _activeStrawberry;
+    [SerializeField]private List<Transform> FilledCells = new List<Transform>();
 
     private void Start()
     {
-        FillAvailableCells();
+        FillEmptyCells();
         StartCoroutine(SpawnStrawberry());
         StartCoroutine(SpawnCoin());
     }
 
-    private void FillAvailableCells()
+    private void FillEmptyCells()
     {
-        foreach (Transform cell in _gridParent)
+        foreach (Transform cell in _playableGrid)
         {
-            availableCells.Add(cell);
+            EmptyCells.Add(cell);
         }
     }
 
@@ -34,15 +34,15 @@ public class MinigameGrid : MonoBehaviour
     {
         while (true)
         {
-            if (activeStrawberry == null)
+            if (_activeStrawberry == null)
             {
-                yield return new WaitForSeconds(Random.Range(_minSpawnTime, _maxSpawnTime));
-                if (usedCoinCells.Count < availableCells.Count)
+                yield return new WaitForSeconds(Random.Range(_minimumSpawnTime, _maximumSpawnTime));
+                if (FilledCells.Count < EmptyCells.Count)
                 {
-                    Transform randomCell = GetRandomAvailableCell();
-                    activeStrawberry = Instantiate(_strawberryPrefab, randomCell.position, Quaternion.identity, randomCell).transform;
+                    Transform randomCell = GetEmptyCell();
+                    _activeStrawberry = Instantiate(_berryPrefab, randomCell.position, Quaternion.identity, randomCell).transform;
                     // Сделаем клубнику дочерним объектом ячейки
-                    activeStrawberry.SetParent(randomCell);
+                    _activeStrawberry.SetParent(randomCell);
                 }
             }
             else
@@ -56,12 +56,12 @@ public class MinigameGrid : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(Random.Range(_minSpawnTime, _maxSpawnTime));
+            yield return new WaitForSeconds(Random.Range(_minimumSpawnTime, _maximumSpawnTime));
 
-            if (availableCells.Count > 0)
+            if (EmptyCells.Count > 0)
             {
-                Transform randomCell = GetRandomAvailableCell();
-                usedCoinCells.Add(randomCell);
+                Transform randomCell = GetEmptyCell();
+                FilledCells.Add(randomCell);
                 GameObject coin = Instantiate(_coinPrefab, randomCell.position, Quaternion.identity);
                 // Сделаем монетку дочерним объектом ячейки
                 coin.transform.SetParent(randomCell);
@@ -69,29 +69,29 @@ public class MinigameGrid : MonoBehaviour
         }
     }
 
-    private Transform GetRandomAvailableCell()
+    private Transform GetEmptyCell()
     {
-        int randomIndex = Random.Range(0, availableCells.Count);
-        Transform randomCell = availableCells[randomIndex];
-        availableCells.RemoveAt(randomIndex);
+        int randomIndex = Random.Range(0, EmptyCells.Count);
+        Transform randomCell = EmptyCells[randomIndex];
+        EmptyCells.RemoveAt(randomIndex);
         return randomCell;
     }
 
     public void PlaceStrawberry(Transform strawberryTransform, Transform cellTransform)
     {
-        if (availableCells.Contains(cellTransform))
+        if (EmptyCells.Contains(cellTransform))
         {
             strawberryTransform.position = cellTransform.position;
-            availableCells.Remove(cellTransform);
+            EmptyCells.Remove(cellTransform);
         }
     }
 
-    public void RemoveOccupiedCell(Transform cell)
+    public void FreeCell(Transform cell)
     {
-        availableCells.Add(cell);
+        EmptyCells.Add(cell);
     }
-    public void AddOccupiedCell(Transform cell)
+    public void FillCell(Transform cell)
     {
-        availableCells.Remove(cell);
+        EmptyCells.Remove(cell);
     }
 }

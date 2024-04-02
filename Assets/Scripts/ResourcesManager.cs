@@ -6,53 +6,53 @@ using UnityEngine;
 
 public class ResourcesManager : MonoBehaviour
 {
-    public int _energy;
-    public int _coins;
+    public int Energy;
+    public int Coins;
     [SerializeField] private int _maxEnergy;
     [SerializeField] private TextMeshProUGUI _coinText;
     [SerializeField] private TextMeshProUGUI _energyText;
-    // Start is called before the first frame update
+
     public void Start()
     {
-        _energy = PlayerPrefs.GetInt("PlayerEnergy", 100);
+        Energy = PlayerPrefs.GetInt("PlayerEnergy", 100);
         EnergyStopper();
-        _coins = PlayerPrefs.GetInt("PlayerCoins", 0);
+        Coins = PlayerPrefs.GetInt("PlayerCoins", 0);
         ChangeCoinCounter();
 
     }
     public void SavePlayerPrefs()
     {
-        PlayerPrefs.SetInt("PlayerEnergy", _energy);
-        PlayerPrefs.SetInt("PlayerCoins", _coins);
+        PlayerPrefs.SetInt("PlayerEnergy", Energy);
+        PlayerPrefs.SetInt("PlayerCoins", Coins);
         PlayerPrefs.Save();
     }
     public void ChangeEnergyCounter()
     {
-        _energyText.text = _energy.ToString();
+        _energyText.text = Energy.ToString();
     }
     public void ChangeCoinCounter()
     {
-        _coinText.text = _coins.ToString();
+        _coinText.text = Coins.ToString();
     }
-    public void RechargeEnergy(int amount)
+    public void BoostEnergy(int amount)
     {
-        _energy += amount;
+        Energy += amount;
         EnergyStopper();
         SavePlayerPrefs();
     }
     public void EnergyStopper()
     {
-        if(_energy > _maxEnergy)
+        if(Energy > _maxEnergy)
         {
-            _energy=_maxEnergy;
+            Energy=_maxEnergy;
         }
         ChangeEnergyCounter();
     }
     public void SpendCoins(int amount)
     {
-        if (amount <= _coins)
+        if (amount <= Coins)
         {
-            _coins -= amount;
+            Coins -= amount;
         }
     }
 }

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
   
-    public void GoToMenu()
+    public void GoToMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
     }
@@ -18,7 +18,7 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene("SlotMachineScene");
     }
-    public void GoToSlotMinigame()
+    public void GoToEnergyMinigame()
     {
         SceneManager.LoadScene("MinigameScene");
     }

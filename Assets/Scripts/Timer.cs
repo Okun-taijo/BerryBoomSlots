@@ -13,16 +13,16 @@ public class Timer : MonoBehaviour
 
     void Start()
     {
-        StartCountdown();
+        StartTimerCountdown();
     }
 
-    void StartCountdown()
+    void StartTimerCountdown()
     {
         int totalSeconds = _minutes * 60 + _seconds;
-        StartCoroutine(CountdownRoutine(totalSeconds));
+        StartCoroutine(CountdownTimerRoutine(totalSeconds));
     }
 
-    IEnumerator CountdownRoutine(int totalSeconds)
+    IEnumerator CountdownTimerRoutine(int totalSeconds)
     {
         while (totalSeconds > 0)
         {
@@ -38,6 +38,6 @@ public class Timer : MonoBehaviour
         }
 
         _timerText.text = "00:00";
-        _sceneLoader.GoToMenu();
+        _sceneLoader.GoToMainMenu();
     }
 }

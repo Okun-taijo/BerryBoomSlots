@@ -3,24 +3,24 @@ using UnityEngine.UI;
 
 public class Unblocker : MonoBehaviour
 {
-    [SerializeField] private Image _image;
+    [SerializeField] private Image _imageBerry;
     [SerializeField] private ResourcesManager _resourceManager;
-    [SerializeField] private int _cost;
-    [SerializeField] private Button _button;
+    [SerializeField] private int _berryCost;
+    [SerializeField] private Button _berryButton;
 
     private const string ButtonPressedKey = "ButtonPressed";
     private const string ImageColorKeyPrefix = "ImageColor_";
 
     private void Start()
     {
-        bool buttonPressed = PlayerPrefs.GetInt(ButtonPressedKey + _button.gameObject.name, 0) == 1;
+        bool buttonPressed = PlayerPrefs.GetInt(ButtonPressedKey + _berryButton.gameObject.name, 0) == 1;
         if (buttonPressed)
         {
-            _button.interactable = false;
+            _berryButton.interactable = false;
         }
 
         // Извлекаем имя кнопки, к которой привязан данный скрипт
-        string buttonName = _button.gameObject.name;
+        string buttonName = _berryButton.gameObject.name;
         string imageColorKey = ImageColorKeyPrefix + buttonName;
 
         if (PlayerPrefs.HasKey(imageColorKey))
@@ -29,28 +29,28 @@ public class Unblocker : MonoBehaviour
             Color savedColor;
             if (ColorUtility.TryParseHtmlString("#" + colorString, out savedColor))
             {
-                _image.color = savedColor;
+                _imageBerry.color = savedColor;
             }
         }
     }
 
     public void OnClick()
     {
-        if (_resourceManager._coins >= _cost)
+        if (_resourceManager.Coins >= _berryCost)
         {
-            _resourceManager.SpendCoins(_cost);
+            _resourceManager.SpendCoins(_berryCost);
             _resourceManager.ChangeCoinCounter();
             _resourceManager.SavePlayerPrefs();
-            _button.interactable = false; // Выключаем текущую кнопку
-            var tempColor = _image.color;
+            _berryButton.interactable = false; // Выключаем текущую кнопку
+            var tempColor = _imageBerry.color;
             tempColor.a = 1f;
-            _image.color = tempColor;
-            PlayerPrefs.SetInt(ButtonPressedKey + _button.gameObject.name, 1);
+            _imageBerry.color = tempColor;
+            PlayerPrefs.SetInt(ButtonPressedKey + _berryButton.gameObject.name, 1);
 
             // Сохраняем цвет для данной кнопки
-            string buttonName = _button.gameObject.name;
+            string buttonName = _berryButton.gameObject.name;
             string imageColorKey = ImageColorKeyPrefix + buttonName;
-            string colorString = ColorUtility.ToHtmlStringRGBA(_image.color);
+            string colorString = ColorUtility.ToHtmlStringRGBA(_imageBerry.color);
             PlayerPrefs.SetString(imageColorKey, colorString);
 
             PlayerPrefs.Save();
