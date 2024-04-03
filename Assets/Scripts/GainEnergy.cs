@@ -9,7 +9,6 @@ public class GainEnergy : MonoBehaviour
     public void GainBerryEnergy()
     {
         _resourcesManager.BoostEnergy(_gainingEnergy);
-        _resourcesManager.SpendCoins(_gainingEnergy);
         _resourcesManager.SavePlayerPrefs();
     }
 }

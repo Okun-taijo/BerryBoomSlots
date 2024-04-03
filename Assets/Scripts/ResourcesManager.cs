@@ -12,6 +12,7 @@ public class ResourcesManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _coinText;
     [SerializeField] private TextMeshProUGUI _energyText;
 
+
     public void Start()
     {
         Energy = PlayerPrefs.GetInt("PlayerEnergy", 100);
