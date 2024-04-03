@@ -68,7 +68,7 @@ public class SlotMachine : MonoBehaviour
             Sprite symbolSprite = _slotsSymbols[UnityEngine.Random.Range(0, _slotsSymbols.Length)];
             _resultOfSpin[slotIndex].Add(symbolSprite);
             slot.GetComponent<SpriteRenderer>().sprite = symbolSprite;
-            slot.localScale = new Vector3(0.050733f, 0.03f, 1f);
+            slot.localScale = new Vector3(0.6f, 0.6f, 1f);
 
             spinnerTime += Time.deltaTime;
             yield return null;
@@ -101,7 +101,7 @@ public class SlotMachine : MonoBehaviour
         }
         if (symbolName1 == symbolName2 && symbolName1 == symbolName3)
         {
-            if (symbolName1 == "effects_3")
+            if (symbolName1 == "Items_1")
             {
                 _resourcesManager.Coins += 500;
                 _sounds[3].Play();
@@ -125,7 +125,7 @@ public class SlotMachine : MonoBehaviour
     {
         Sprite randomSymbol = _slotsSymbols[UnityEngine.Random.Range(0, _slotsSymbols.Length)];
         slot.GetComponent<SpriteRenderer>().sprite = randomSymbol;
-        slot.localScale = new Vector3(0.050733f, 0.03f, 1f);
+        slot.localScale = new Vector3(0.6f, 0.6f, 1f);
     }
 }
 

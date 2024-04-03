@@ -314,7 +314,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1741385488, guid: 2463b424e71760c47b5509062d8ed103, type: 3}
+  m_Sprite: {fileID: -1809804014, guid: 860f9dfd0122297469abd28fbeaa349e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -443,7 +443,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 132, y: -203}
+  m_AnchoredPosition: {x: 159.99998, y: -203}
   m_SizeDelta: {x: 90, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &73943928
@@ -466,7 +466,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1747716642, guid: 5713b9d953963774b817325bbddf88a6, type: 3}
+  m_Sprite: {fileID: -966275543, guid: c54b067e639441a4b92d2ebcb1f5189a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -711,8 +711,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 500
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2aee6b6598f1e85499e3cc01a4eb57ed, type: 2}
-  m_sharedMaterial: {fileID: 9087705705124797308, guid: 2aee6b6598f1e85499e3cc01a4eb57ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a4ca71cf83901ba4fa1f41db55f0ba64, type: 2}
+  m_sharedMaterial: {fileID: 4216170324084128038, guid: a4ca71cf83901ba4fa1f41db55f0ba64, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -922,8 +922,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: MINIGAME
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d64b00f1dd2ea63468d538c641883500, type: 2}
-  m_sharedMaterial: {fileID: 6249364987372763049, guid: d64b00f1dd2ea63468d538c641883500, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a4ca71cf83901ba4fa1f41db55f0ba64, type: 2}
+  m_sharedMaterial: {fileID: 4216170324084128038, guid: a4ca71cf83901ba4fa1f41db55f0ba64, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1098,8 +1098,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 153525669}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.1102, y: 0.218, z: 0}
-  m_LocalScale: {x: 1.8707814, y: 3.8992596, z: 1}
+  m_LocalPosition: {x: -2.3064, y: 0.283, z: 0}
+  m_LocalScale: {x: 1.9592694, y: 2.9172206, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 481108697}
@@ -1192,7 +1192,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 131.37067, y: -197.00002}
+  m_AnchoredPosition: {x: 159.37065, y: -197.00002}
   m_SizeDelta: {x: 90, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &169780169
@@ -1215,7 +1215,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1747716642, guid: 5713b9d953963774b817325bbddf88a6, type: 3}
+  m_Sprite: {fileID: -966275543, guid: c54b067e639441a4b92d2ebcb1f5189a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1258,8 +1258,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 171085209}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.0646, y: 0.171, z: 0}
-  m_LocalScale: {x: 1.9327297, y: 4.0170655, z: 1}
+  m_LocalPosition: {x: 2.37, y: 0.2, z: 0}
+  m_LocalScale: {x: 1.9327297, y: 2.795757, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2043541030}
@@ -1377,8 +1377,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2aee6b6598f1e85499e3cc01a4eb57ed, type: 2}
-  m_sharedMaterial: {fileID: 9087705705124797308, guid: 2aee6b6598f1e85499e3cc01a4eb57ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a4ca71cf83901ba4fa1f41db55f0ba64, type: 2}
+  m_sharedMaterial: {fileID: 4216170324084128038, guid: a4ca71cf83901ba4fa1f41db55f0ba64, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1805,8 +1805,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 245225554}
-        m_TargetAssemblyTypeName: StrawberryCollector, Assembly-CSharp
-        m_MethodName: BuyStrawberry
+        m_TargetAssemblyTypeName: GainEnergy, Assembly-CSharp
+        m_MethodName: GainBerryEnergy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1836,7 +1836,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1620923546, guid: a546081826e90eb4b9f70f1ca1e7732a, type: 3}
+  m_Sprite: {fileID: 129945739, guid: 7ebfb4bda2073f64b844fc4ff5588da1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1863,14 +1863,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 245225549}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3f9f6058f1ade943977283db8888e71, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b4f3b267ac95664a81161b4f4721826, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _recourcesManager: {fileID: 1482297025}
-  _cost: 2500
-  _gainedEnergy: 100
-  _button: {fileID: 245225551}
-  _audioSource: {fileID: 533474943}
+  _resourcesManager: {fileID: 1482297025}
+  _gainingEnergy: 75
 --- !u!1 &252026363
 GameObject:
   m_ObjectHideFlags: 0
@@ -1958,9 +1955,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 252026368}
-        m_TargetAssemblyTypeName: StrawberryCollector, Assembly-CSharp
-        m_MethodName: BuyStrawberry
+      - m_Target: {fileID: 245225554}
+        m_TargetAssemblyTypeName: GainEnergy, Assembly-CSharp
+        m_MethodName: GainBerryEnergy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1990,7 +1987,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1620923546, guid: a546081826e90eb4b9f70f1ca1e7732a, type: 3}
+  m_Sprite: {fileID: 129945739, guid: 7ebfb4bda2073f64b844fc4ff5588da1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2017,14 +2014,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 252026363}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3f9f6058f1ade943977283db8888e71, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b4f3b267ac95664a81161b4f4721826, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _recourcesManager: {fileID: 1482297025}
-  _cost: 1500
-  _gainedEnergy: 60
-  _button: {fileID: 252026365}
-  _audioSource: {fileID: 533474943}
+  _resourcesManager: {fileID: 1482297025}
+  _gainingEnergy: 45
 --- !u!1 &269575764
 GameObject:
   m_ObjectHideFlags: 0
@@ -2161,8 +2155,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 1000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2aee6b6598f1e85499e3cc01a4eb57ed, type: 2}
-  m_sharedMaterial: {fileID: 9087705705124797308, guid: 2aee6b6598f1e85499e3cc01a4eb57ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a4ca71cf83901ba4fa1f41db55f0ba64, type: 2}
+  m_sharedMaterial: {fileID: 4216170324084128038, guid: a4ca71cf83901ba4fa1f41db55f0ba64, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2465,8 +2459,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 2500
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2aee6b6598f1e85499e3cc01a4eb57ed, type: 2}
-  m_sharedMaterial: {fileID: 9087705705124797308, guid: 2aee6b6598f1e85499e3cc01a4eb57ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a4ca71cf83901ba4fa1f41db55f0ba64, type: 2}
+  m_sharedMaterial: {fileID: 4216170324084128038, guid: a4ca71cf83901ba4fa1f41db55f0ba64, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2575,7 +2569,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 132, y: -206}
+  m_AnchoredPosition: {x: 159.99998, y: -206}
   m_SizeDelta: {x: 90, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &341165715
@@ -2598,7 +2592,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1747716642, guid: 5713b9d953963774b817325bbddf88a6, type: 3}
+  m_Sprite: {fileID: -966275543, guid: c54b067e639441a4b92d2ebcb1f5189a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2656,8 +2650,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2aee6b6598f1e85499e3cc01a4eb57ed, type: 2}
-  m_sharedMaterial: {fileID: 9087705705124797308, guid: 2aee6b6598f1e85499e3cc01a4eb57ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a4ca71cf83901ba4fa1f41db55f0ba64, type: 2}
+  m_sharedMaterial: {fileID: 4216170324084128038, guid: a4ca71cf83901ba4fa1f41db55f0ba64, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2786,7 +2780,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 123, y: -196}
+  m_AnchoredPosition: {x: 150.99998, y: -196}
   m_SizeDelta: {x: 90, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &414176429
@@ -2809,7 +2803,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1747716642, guid: 5713b9d953963774b817325bbddf88a6, type: 3}
+  m_Sprite: {fileID: -966275543, guid: c54b067e639441a4b92d2ebcb1f5189a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2913,7 +2907,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1384702683}
         m_TargetAssemblyTypeName: SlotMachine, Assembly-CSharp
-        m_MethodName: Spin
+        m_MethodName: SpinMachine
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2943,7 +2937,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 590414751, guid: 2463b424e71760c47b5509062d8ed103, type: 3}
+  m_Sprite: {fileID: 615692858, guid: 860f9dfd0122297469abd28fbeaa349e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3334,8 +3328,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 1500
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2aee6b6598f1e85499e3cc01a4eb57ed, type: 2}
-  m_sharedMaterial: {fileID: 9087705705124797308, guid: 2aee6b6598f1e85499e3cc01a4eb57ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a4ca71cf83901ba4fa1f41db55f0ba64, type: 2}
+  m_sharedMaterial: {fileID: 4216170324084128038, guid: a4ca71cf83901ba4fa1f41db55f0ba64, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3918,8 +3912,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 2000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2aee6b6598f1e85499e3cc01a4eb57ed, type: 2}
-  m_sharedMaterial: {fileID: 9087705705124797308, guid: 2aee6b6598f1e85499e3cc01a4eb57ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a4ca71cf83901ba4fa1f41db55f0ba64, type: 2}
+  m_sharedMaterial: {fileID: 4216170324084128038, guid: a4ca71cf83901ba4fa1f41db55f0ba64, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4171,7 +4165,7 @@ RectTransform:
   m_GameObject: {fileID: 620403664}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 80, y: 70, z: 1}
+  m_LocalScale: {x: 30, y: 30, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1413465866}
@@ -4179,7 +4173,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11, y: -22}
+  m_AnchoredPosition: {x: 11, y: 6}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &620403666
@@ -4223,7 +4217,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: fd58613626aeebe4a849d46ad5f83baa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 68b203b75b048a640a2d916c257d98c4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4292,7 +4286,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e271e8e996ddc564ba86d9c68fa20aee, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d07fb075f1471644e8f2a2ca29981280, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4488,7 +4482,7 @@ RectTransform:
   m_GameObject: {fileID: 711158606}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 80, y: 70, z: 1}
+  m_LocalScale: {x: 30, y: 30, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1338802953}
@@ -4496,7 +4490,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11, y: -22}
+  m_AnchoredPosition: {x: -8, y: -8}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &711158608
@@ -4540,7 +4534,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: fd58613626aeebe4a849d46ad5f83baa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e732326a4097d3c4db6172d8758023e1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4906,7 +4900,7 @@ RectTransform:
   m_GameObject: {fileID: 796091660}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 80, y: 70, z: 1}
+  m_LocalScale: {x: 30, y: 30, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 252026364}
@@ -4914,7 +4908,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11, y: -22}
+  m_AnchoredPosition: {x: 11, y: -4}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &796091662
@@ -4958,7 +4952,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: fd58613626aeebe4a849d46ad5f83baa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2310c20e93ece344a9a0f6caa76f693c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5004,7 +4998,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 129, y: -199.00005}
+  m_AnchoredPosition: {x: 157, y: -199.00005}
   m_SizeDelta: {x: 90, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &809868637
@@ -5027,7 +5021,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1747716642, guid: 5713b9d953963774b817325bbddf88a6, type: 3}
+  m_Sprite: {fileID: -966275543, guid: c54b067e639441a4b92d2ebcb1f5189a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5445,9 +5439,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 956546395}
-        m_TargetAssemblyTypeName: StrawberryCollector, Assembly-CSharp
-        m_MethodName: BuyStrawberry
+      - m_Target: {fileID: 245225554}
+        m_TargetAssemblyTypeName: GainEnergy, Assembly-CSharp
+        m_MethodName: GainBerryEnergy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5477,7 +5471,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1620923546, guid: a546081826e90eb4b9f70f1ca1e7732a, type: 3}
+  m_Sprite: {fileID: 129945739, guid: 7ebfb4bda2073f64b844fc4ff5588da1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5504,14 +5498,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 956546390}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3f9f6058f1ade943977283db8888e71, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b4f3b267ac95664a81161b4f4721826, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _recourcesManager: {fileID: 1482297025}
-  _cost: 500
-  _gainedEnergy: 20
-  _button: {fileID: 956546392}
-  _audioSource: {fileID: 533474943}
+  _resourcesManager: {fileID: 1482297025}
+  _gainingEnergy: 15
 --- !u!1 &958957790
 GameObject:
   m_ObjectHideFlags: 0
@@ -5538,7 +5529,7 @@ RectTransform:
   m_GameObject: {fileID: 958957790}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 80, y: 70, z: 1}
+  m_LocalScale: {x: 30, y: 30, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1503635641}
@@ -5546,7 +5537,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11, y: -22}
+  m_AnchoredPosition: {x: 11, y: 6}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &958957792
@@ -5590,7 +5581,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: fd58613626aeebe4a849d46ad5f83baa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 26128d8586565504791cf78bcc291ece, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6118,7 +6109,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1747716642, guid: 5713b9d953963774b817325bbddf88a6, type: 3}
+  m_Sprite: {fileID: -966275543, guid: c54b067e639441a4b92d2ebcb1f5189a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6272,7 +6263,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 783531287, guid: 2463b424e71760c47b5509062d8ed103, type: 3}
+  m_Sprite: {fileID: 615692858, guid: 860f9dfd0122297469abd28fbeaa349e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6377,9 +6368,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1338802957}
-        m_TargetAssemblyTypeName: StrawberryCollector, Assembly-CSharp
-        m_MethodName: BuyStrawberry
+      - m_Target: {fileID: 245225554}
+        m_TargetAssemblyTypeName: GainEnergy, Assembly-CSharp
+        m_MethodName: GainBerryEnergy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6409,7 +6400,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1620923546, guid: a546081826e90eb4b9f70f1ca1e7732a, type: 3}
+  m_Sprite: {fileID: 129945739, guid: 7ebfb4bda2073f64b844fc4ff5588da1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6436,14 +6427,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1338802952}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3f9f6058f1ade943977283db8888e71, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b4f3b267ac95664a81161b4f4721826, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _recourcesManager: {fileID: 1482297025}
-  _cost: 2000
-  _gainedEnergy: 80
-  _button: {fileID: 1338802954}
-  _audioSource: {fileID: 533474943}
+  _resourcesManager: {fileID: 1482297025}
+  _gainingEnergy: 60
 --- !u!1 &1369575135
 GameObject:
   m_ObjectHideFlags: 0
@@ -6556,23 +6544,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _resourcesManager: {fileID: 1482297025}
   _energyCost: 10
-  _symbols:
-  - {fileID: 406703638, guid: 8e3d1a286ab361646a229d1d359785cd, type: 3}
-  - {fileID: -278712438, guid: 8e3d1a286ab361646a229d1d359785cd, type: 3}
-  - {fileID: -213197698, guid: 8e3d1a286ab361646a229d1d359785cd, type: 3}
+  _slotsSymbols:
+  - {fileID: -591222907, guid: c54b067e639441a4b92d2ebcb1f5189a, type: 3}
+  - {fileID: 1852978517, guid: c54b067e639441a4b92d2ebcb1f5189a, type: 3}
+  - {fileID: 1178867127, guid: c54b067e639441a4b92d2ebcb1f5189a, type: 3}
+  - {fileID: -1901239890, guid: c54b067e639441a4b92d2ebcb1f5189a, type: 3}
+  - {fileID: 2035526327, guid: c54b067e639441a4b92d2ebcb1f5189a, type: 3}
   _spinDuration: 3
-  _symbolSlots:
+  _machineSlots:
   - {fileID: 279537157}
   - {fileID: 532115396}
   - {fileID: 1667809045}
-  _jackpotThreshold: 1
-  _audioSources:
+  _jackpotPin: 0
+  _sounds:
   - {fileID: 1384702689}
   - {fileID: 1384702688}
   - {fileID: 1384702687}
   - {fileID: 1384702686}
   _sceneLoader: {fileID: 1678392166}
-  _animator: {fileID: 846277493}
+  _winAnimator: {fileID: 846277493}
 --- !u!212 &1384702684
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6614,7 +6604,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1a7d3a7f30c0e4244bbd519ca65c7af3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d31f305374065c246aa985cfd406f730, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7114,9 +7104,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1413465870}
-        m_TargetAssemblyTypeName: StrawberryCollector, Assembly-CSharp
-        m_MethodName: BuyStrawberry
+      - m_Target: {fileID: 245225554}
+        m_TargetAssemblyTypeName: GainEnergy, Assembly-CSharp
+        m_MethodName: GainBerryEnergy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7146,7 +7136,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1620923546, guid: a546081826e90eb4b9f70f1ca1e7732a, type: 3}
+  m_Sprite: {fileID: 129945739, guid: 7ebfb4bda2073f64b844fc4ff5588da1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7173,14 +7163,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1413465865}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3f9f6058f1ade943977283db8888e71, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b4f3b267ac95664a81161b4f4721826, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _recourcesManager: {fileID: 1482297025}
-  _cost: 1000
-  _gainedEnergy: 40
-  _button: {fileID: 1413465867}
-  _audioSource: {fileID: 533474943}
+  _resourcesManager: {fileID: 1482297025}
+  _gainingEnergy: 30
 --- !u!1 &1449878857
 GameObject:
   m_ObjectHideFlags: 0
@@ -7292,7 +7279,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 105, y: -199.00002}
+  m_AnchoredPosition: {x: 132.99998, y: -199.00002}
   m_SizeDelta: {x: 90, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1453919606
@@ -7315,7 +7302,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1747716642, guid: 5713b9d953963774b817325bbddf88a6, type: 3}
+  m_Sprite: {fileID: -966275543, guid: c54b067e639441a4b92d2ebcb1f5189a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7623,8 +7610,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479177755}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0376, y: 0.085, z: 0}
-  m_LocalScale: {x: 1.8926401, y: 4.069366, z: 1}
+  m_LocalPosition: {x: -0.0376, y: 0.242, z: 0}
+  m_LocalScale: {x: 1.8926401, y: 2.9541316, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 282876609}
@@ -7787,8 +7774,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf0e7c3379fc3fe43b5ea24e85420539, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _energy: 100
-  _coins: 4200
+  Energy: 0
+  Coins: 0
   _maxEnergy: 150
   _coinText: {fileID: 353859272}
   _energyText: {fileID: 178570873}
@@ -7962,9 +7949,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1503635645}
-        m_TargetAssemblyTypeName: StrawberryCollector, Assembly-CSharp
-        m_MethodName: BuyStrawberry
+      - m_Target: {fileID: 245225554}
+        m_TargetAssemblyTypeName: GainEnergy, Assembly-CSharp
+        m_MethodName: GainBerryEnergy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7994,7 +7981,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1620923546, guid: a546081826e90eb4b9f70f1ca1e7732a, type: 3}
+  m_Sprite: {fileID: 129945739, guid: 7ebfb4bda2073f64b844fc4ff5588da1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8021,14 +8008,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1503635640}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3f9f6058f1ade943977283db8888e71, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b4f3b267ac95664a81161b4f4721826, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _recourcesManager: {fileID: 1482297025}
-  _cost: 3000
-  _gainedEnergy: 120
-  _button: {fileID: 1503635642}
-  _audioSource: {fileID: 533474943}
+  _resourcesManager: {fileID: 1482297025}
+  _gainingEnergy: 90
 --- !u!1 &1581534481
 GameObject:
   m_ObjectHideFlags: 0
@@ -8065,7 +8049,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -150, y: -4}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1581534483
 MonoBehaviour:
@@ -8087,7 +8071,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c69da62e56cdebc40b0bc40bf445b884, type: 3}
+  m_Sprite: {fileID: -111732316, guid: 860f9dfd0122297469abd28fbeaa349e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8411,7 +8395,7 @@ RectTransform:
   m_GameObject: {fileID: 1812775536}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 80, y: 70, z: 1}
+  m_LocalScale: {x: 30, y: 30, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 245225550}
@@ -8419,7 +8403,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11, y: -22}
+  m_AnchoredPosition: {x: 11, y: 15.000004}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1812775538
@@ -8463,7 +8447,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: fd58613626aeebe4a849d46ad5f83baa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 45e30f3c761464142892a0143fb4fdea, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8610,8 +8594,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Spin
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2aee6b6598f1e85499e3cc01a4eb57ed, type: 2}
-  m_sharedMaterial: {fileID: 9087705705124797308, guid: 2aee6b6598f1e85499e3cc01a4eb57ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a4ca71cf83901ba4fa1f41db55f0ba64, type: 2}
+  m_sharedMaterial: {fileID: 4216170324084128038, guid: a4ca71cf83901ba4fa1f41db55f0ba64, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8745,7 +8729,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 783531287, guid: 2463b424e71760c47b5509062d8ed103, type: 3}
+  m_Sprite: {fileID: 615692858, guid: 860f9dfd0122297469abd28fbeaa349e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9268,7 +9252,7 @@ RectTransform:
   m_GameObject: {fileID: 2004251184}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 80, y: 70, z: 1}
+  m_LocalScale: {x: 30, y: 30, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 956546391}
@@ -9276,7 +9260,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11, y: -22}
+  m_AnchoredPosition: {x: 11, y: 15.000004}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &2004251186
@@ -9320,7 +9304,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: fd58613626aeebe4a849d46ad5f83baa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cd7087c086780d246a8222c4b56eb15c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9667,7 +9651,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1055785713, guid: 2463b424e71760c47b5509062d8ed103, type: 3}
+  m_Sprite: {fileID: 1267925957, guid: 860f9dfd0122297469abd28fbeaa349e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9973,8 +9957,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 3000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2aee6b6598f1e85499e3cc01a4eb57ed, type: 2}
-  m_sharedMaterial: {fileID: 9087705705124797308, guid: 2aee6b6598f1e85499e3cc01a4eb57ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a4ca71cf83901ba4fa1f41db55f0ba64, type: 2}
+  m_sharedMaterial: {fileID: 4216170324084128038, guid: a4ca71cf83901ba4fa1f41db55f0ba64, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

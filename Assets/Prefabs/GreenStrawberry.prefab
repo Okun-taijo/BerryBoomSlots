@@ -74,7 +74,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9438fc167df2cc14bae9ec0dfb0185e5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2310c20e93ece344a9a0f6caa76f693c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -96,8 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0d0191a81036cf4e81d642ad9e0723e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _grid: {fileID: 0}
-  _rectTransform: {fileID: 0}
+  _minigameField: {fileID: 0}
+  _localRectRansform: {fileID: 0}
 --- !u!225 &1547309288422712769
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -122,15 +122,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66893564adcb5146ba058cf860b0c2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _requiredCoins: 3
+  _neededCoins: 0
   _currentCoins: 0
   _resourcesManager: {fileID: 0}
-  _dragNDrop: {fileID: 1228395997174880398}
-  _clickable: {fileID: -2184325825688356537}
-  _imageToChange: {fileID: 1852493794268127535}
-  _audioSources:
-  - {fileID: -949069048457557944}
-  - {fileID: 4245680272673771806}
+  _dragableComponent: {fileID: 1228395997174880398, guid: 05497cab26914e946bd4023c944730f6, type: 3}
+  _clickableObject: {fileID: -2184325825688356537, guid: 05497cab26914e946bd4023c944730f6, type: 3}
+  _changeableImage: {fileID: 1852493794268127535, guid: 05497cab26914e946bd4023c944730f6, type: 3}
+  _sounds: []
   _nextBerry: {fileID: 3106160618645637544, guid: 60253a0610e45934389743a3414f5e61, type: 3}
 --- !u!114 &-2184325825688356537
 MonoBehaviour:
@@ -392,7 +390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e6f9b01172ab6543b6957b694061f7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _duration: 0.5
+  _changeDuration: 0.5
 --- !u!1001 &1485622263755249387
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -406,7 +404,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5297862053593376161, guid: 1628c84daf73f994bac464eed8edee0f, type: 3}
       propertyPath: m_Color.a
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8667053647579204655, guid: 1628c84daf73f994bac464eed8edee0f, type: 3}
       propertyPath: m_Pivot.x
