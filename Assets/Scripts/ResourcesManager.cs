@@ -39,6 +39,7 @@ public class ResourcesManager : MonoBehaviour
     {
         Energy += amount;
         EnergyStopper();
+        ChangeEnergyCounter();
         SavePlayerPrefs();
     }
     public void EnergyStopper()
@@ -55,5 +56,6 @@ public class ResourcesManager : MonoBehaviour
         {
             Coins -= amount;
         }
+        ChangeCoinCounter();
     }
 }
